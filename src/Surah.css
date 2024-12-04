@@ -1,0 +1,67 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* يجعل الصفحة بطول الشاشة */
+  background-color: #800000; /* لون الخلفية */
+}
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Lateef:wght@200;300;400;500;600;700;800&family=Marhey:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.surah-container {
+  padding: 20px;
+  background-color: #F2E8C6; /* لون خلفية مبهج */
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: right; /* محاذاة النص لليمين */
+}
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri+Quran&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Lateef:wght@200;300;400;500;600;700;800&family=Marhey:wght@300..700&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.h2s{
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.back-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: #d32f2f;
+}
+
+h2 {
+  text-align: center; /* محاذاة العنوان في الوسط */
+}
+
+.verses-container {
+  margin-top: 20px; /* مسافة بين العنوان ومحتوى الآيات */
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=El+Messiri:wght@400..700&family=Lateef:wght@200;300;400;500;600;700;800&family=Marhey:wght@300..700&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri+Quran&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Jomhuria&family=Lalezar&family=Lateef:wght@200;300;400;500;600;700;800&family=Marhey:wght@300..700&family=Noto+Sans+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.verses-text {
+  font-family: "Almarai", serif;
+  /* font-family: "Noto Sans Arabic", sans-serif; */
+  font-size: 17px; /* حجم الخط */
+  line-height: 2; /* ارتفاع الخط */
+  direction: rtl; /* اتجاه الكتابة من اليمين لليسار */
+  text-align: justify; /* محاذاة النص لتكون متساوية الأطراف */
+  text-justify: inter-word; /* توزيع المسافات بين الكلمات */
+  font-weight: bolder;
+}
+
+.verse-number {
+  color: #e70c0c; /* اللون المختلف لترقيم الآيات */
+  font-weight: bold; /* جعل رقم الآية بارز */
+}
+
+.bismillah-text {
+  font-family: 'Amiri', serif; /* خط مناسب للنصوص العربية */
+  font-size: 1.6rem; /* حجم النص */
+  color: #000; /* لون النص */
+  text-align: center; /* توسيط النص */
+  margin-bottom: 20px; /* مسافة تحت النص */
+  line-height: 2; /* ارتفاع السطر */
+  font-weight: bolder;
+}

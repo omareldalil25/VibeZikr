@@ -1,0 +1,67 @@
+/* src/Quran.css */
+.quran-container {
+    padding: 20px;
+    background-color: #800000; /* خلفية مبهجة */
+}
+
+.surah-list {
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.surah-boxes {
+    display: flex; /* استخدام Flexbox لعرض العناصر في صفوف */
+    flex-wrap: wrap; /* السماح للمربعات بالانتقال إلى السطر التالي عند الحاجة */
+    justify-content: flex-start; /* محاذاة العناصر من اليمين */
+    direction: rtl; /* الاتجاه من اليمين لليسار */
+}
+
+.surah-box {
+    font-weight:bolder;
+    font-size: 19px;
+    background: #F2E8C6; /* لون خلفية لكل مربع */
+    color: #000;
+    border-radius: 15px; /* زوايا دائرية */
+    padding: 20px; /* هوامش داخلية */
+    margin: 10px; /* مسافة بين المربعات */
+    cursor: pointer;
+    flex: 1 1 calc(20% - 20px); /* عرض كل مربع 20% مع تقليص للنقاط */
+    min-width: 150px; /* الحد الأدنى من العرض للمربع */
+    text-align: center; /* محاذاة النص في المركز */
+}
+
+.surah-box:hover {
+    background: #DAD4B5; /* تغير اللون عند التمرير */
+}
+
+/* تخصيص لأجهزة الموبايل */
+@media (max-width: 600px) {
+    .surah-box {
+        flex: 1 1 calc(30% - 20px); /* عرض المربعات 30% عند الشاشة الصغيرة */
+    }
+}
+
+@media (max-width: 400px) {
+    .surah-box {
+        flex: 1 1 calc(100% - 20px); /* عرض المربعات 100% عند الشاشات الأصغر */
+    }
+}
+
+/* تنسيق زر الرجوع */
+.back-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px; 
+    position: absolute; 
+    top: 42px; 
+    right: 25px; 
+}
+
+.back-button:hover {
+    background-color: #000; 
+    color: white;
+}

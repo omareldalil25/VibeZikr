@@ -1,0 +1,27 @@
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #800000, #800000); /* تدرج جميل */
+  direction: rtl; 
+  animation: gradientAnimation 5s ease infinite; /* انيميشن للخلفية */
+}
+
+.intro-logo {
+  width: 400px; /* تكبير حجم الشعار */
+  max-width: 90%; /* ضمان عدم تجاوز العرض */
+  animation: fadeIn 2s; /* انيميشن الشعار */
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}

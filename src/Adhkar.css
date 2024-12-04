@@ -1,0 +1,195 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* يجعل الصفحة بطول الشاشة */
+}
+
+.adhkar-container {
+  padding: 20px;
+  background-color: #800000; /* خلفية برتقالية فاتحة */
+  /* لون الخلفية */
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  min-height: 100vh;
+  /* يجعل الحاوية تملأ ارتفاع الشاشة */
+  box-sizing: border-box;
+  /* لضمان حساب الحواف والتعبئة داخل الحجم */
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #558b2f;
+}
+
+.categories-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.categories-list li {
+  background: #F2E8C6;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-align: center;
+}
+
+.categories-list li:hover {
+  background: #DAD4B5;
+}
+
+.adhkar-list {
+  margin-top: 20px;
+}
+
+.adhkar-list h3 {
+  margin-bottom: 15px;
+  color: #FDFFF0;
+}
+
+.adhkar-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.dhikr-item {
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #c5e1a5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.dhikr-item:hover {
+  transform: scale(1.02);
+}
+
+.dhikr-item.completed {
+  background-color: #e0e0e0;
+}
+
+.zekr-text {
+  font-weight: bold;
+  color: #37474f;
+}
+
+.bless-text {
+  color: #558b2f;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.counter-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #8bc34a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.counter-circle.zero {
+  background-color: #c62828;
+  transform: scale(1.1);
+}
+
+
+.tasbeeh-counter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.counter-circle2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #8bc34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+}
+
+.counter-circle2-inner {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.counter-circle2:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.counter-circle2.completed {
+  background-color: #28a745;
+}
+
+.counter-circle2-inner.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.repetition-label {
+  font-size: 18px;
+  color: #FDFFF0;
+  margin-bottom: 5px;
+}
+
+.categories-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;  /* لضبط النص من اليمين لليسار */
+}
+
+.category-item {
+  display: flex;
+  flex-direction: row-reverse; /* ترتيب العناصر بحيث تكون الأيقونة على اليمين أولاً */
+  align-items: center;
+  justify-content: flex-start; /* التأكد من المحاذاة الصحيحة */
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.category-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px; /* المسافة بين الأيقونة والاسم */
+}
+
+.category-name {
+  font-weight:bold;
+  font-size: 18px;
+  color: #000;
+  margin-right: 10px; /* المسافة بين الاسم والأيقونة */
+}

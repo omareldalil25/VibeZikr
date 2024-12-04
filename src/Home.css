@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+/* Home.css */
+.home-container {
+  direction: rtl;
+  padding: 40px;
+  background-color: #800000; /* خلفية برتقالية فاتحة */
+  min-height: 100vh;
+  text-align: right;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+}
+
+.home-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 230px; 
+  margin-bottom: 20px; 
+}
+
+.home-title {
+  font-family: 'Cairo', sans-serif; /* اختر الخط الذي تريده */
+  text-align: center; /* لتوسيع النص */
+  color: #1565C0; /* لون النص */
+  font-size: 1.8rem; /* حجم النص بعد التصغير */
+  margin-top: 10px;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0; /* إضافة هوامش */
+}
+
+.nav-item {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px; /* زيادة المسافات بين العناصر */
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  background: #F2E8C6; /* لون جذاب للأزرار */
+  padding: 15px 25px; 
+  border-radius: 30px; /* زوايا دائرية جميلة */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+  transition: background 0.3s, transform 0.3s; /* تأثير hover */
+}
+
+.nav-item:hover {
+  background: #DAD4B5; /* لون مظلم عند التحويم */
+  transform: translateY(-3px); /* رفع عند التحويم */
+}
+
+.nav-icon {
+  width: 28px; 
+  height: 28px;
+  margin-left: 10px; /* تقليل المسافة بين الأيقونة والنص */
+}
+
+.nav-item span {
+  margin-right: 10px; /* مسافة بين الأيقونة والنص */
+}

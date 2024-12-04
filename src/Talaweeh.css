@@ -1,0 +1,201 @@
+/* تصميم أساسي */
+.talaweeh-container {
+  direction: rtl;
+  text-align: right;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #800000; /* خلفية برتقالية فاتحة */
+  color: #333;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #FDFFF0;
+}
+.back-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.reciter-selection select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.surah-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.surah-list li {
+  color: #000;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F2E8C6;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين تصميم زر التشغيل */
+.surah-list button {
+  background-color: #800000; /* لون الزر */
+  color: white; /* لون النص */
+  border: none; /* إزالة الحواف الافتراضية */
+  padding: 15px;
+  border-radius: 50%; /* جعل الزر دائريًا */
+  width: 50px; /* حجم الزر */
+  height: 40px; /* حجم الزر */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+  cursor: pointer;
+  transition: all 0.3s ease; /* تأثير الحركة عند التفاعل */
+}
+
+.surah-list button:hover {
+  color: #fff;
+  background-color: #000; /* تغيير لون الزر عند التمرير */
+  transform: scale(1.1); /* تكبير الزر قليلاً */
+}
+
+/* تحسين أيقونة التشغيل داخل الزر */
+.surah-list button i {
+  font-size: 16px; /* حجم الأيقونة */
+}
+
+/* تصميم خاص للأجهزة المحمولة */
+@media (max-width: 768px) {
+  .surah-list button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .surah-list button i {
+    font-size: 14px;
+  }
+}
+
+
+.audio-bar-modern {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F2E8C6;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0px;
+  left: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.play-pause-btn {
+  background: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.progress-bar {
+  direction: ltr; /* يبدأ من اليسار إلى اليمين */
+  flex: 1;
+  margin: 0 10px;
+  appearance: none;
+  height: 5px;
+  background: #000;
+  border-radius: 5px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #4CAF50; /* استبدل 'red' باللون الذي تريده */
+  width: 20px; /* عرض الكرة */
+  height: 20px; /* ارتفاع الكرة */
+  border-radius: 50%; /* لجعل الكرة دائرية */
+  cursor: pointer; /* شكل المؤشر عند المرور فوق الكرة */
+}
+.time {
+  font-size: 14px;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+  .surah-list li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .surah-list span {
+    font-size: 16px;
+  }
+
+  .audio-bar {
+    padding: 8px;
+  }
+
+  audio {
+    width: calc(100% - 40px);
+  }
+}
+
+/* تحسين تصميم قائمة اختيار القارئ */
+.reciter-selection {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* لضمان الترتيب العمودي */
+  align-items: center; /* توسيط العناصر أفقيًا */
+}
+
+.reciter-selection label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.reciter-selection select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /* اجعل العنصر يأخذ العرض الكامل */
+  max-width: 300px; /* حدد عرضًا أقصى لتجنب أن يصبح طويلًا جدًا */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسينات للأجهزة المحمولة */
+@media (max-width: 768px) {
+  .reciter-selection {
+    padding: 0 10px; /* أضف مسافات جانبية لضمان التوافق */
+  }
+
+  .reciter-selection select {
+    font-size: 14px; /* تكبير النص قليلاً لتحسين الرؤية */
+  }
+}
+
